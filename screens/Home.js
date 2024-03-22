@@ -7,7 +7,6 @@ import Content from '../components/Content'
 export default function Home() {
   return (
     <View style={{marginTop:25, display:'flex',justifyContent: 'center',alignContent:'center',backgroundColor:'#EAEBEF'}} >
-      <Header />
       <Story />
       <View style={{marginTop:10, marginLeft:10, marginRight:10, display:'flex',justifyContent: 'center',alignContent:'center'}}>
         <Content />

@@ -63,7 +63,8 @@ export default function Story() {
             shadowOffset: { width: 3, height: 3 },
             shadowOpacity: .8,
             shadowRadius: 5,
-            elevation: 3
+            elevation: 3,
+            marginTop: 30,
         }}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} >
                 {PROFILE_IMAGES.map((profileImage) => (
