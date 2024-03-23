@@ -7,4 +7,5 @@ or you can use "w" for website version.
 if you going to use iOS simulator, it's whole different story.
 
 Here is a gif for you:
-https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG9hcWp3Y3dlZDNwcnM1OXp6M2xnYXZkN2h0anU4d2l2YzFoMTExbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v0JCE93NW7VS8guQhd/giphy.gif
+![Untitled design](https://github.com/anildegirmenci/sample-app-react-native/assets/44087143/e92c3f49-4d3c-4109-b3ff-866022bcde40)
+
