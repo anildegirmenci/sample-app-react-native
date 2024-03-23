@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        marginTop: 100
+        backgroundColor:'#fff',
+        justifyContent: 'center',
     },
     avatar: {
         marginBottom: 25,

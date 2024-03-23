@@ -19,7 +19,7 @@ export default function Second({ navigation }) {
                     <Entypo name="dots-three-horizontal" size={50} color="#EAECF3" />
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={()=>navigation.navigate('Third')}>
+                    onPress={() => navigation.navigate('Third')}>
                     <Text style={styles.buttonText}>İleri</Text>
                 </TouchableOpacity>
             </View>
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         alignItems: 'center',
-        marginTop: 100
+        backgroundColor:'#fff',
+        justifyContent: 'center',
     },
     avatar: {
         marginBottom: 25,
@@ -65,4 +66,3 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
 })
-
