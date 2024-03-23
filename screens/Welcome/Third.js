@@ -20,7 +20,7 @@ export default function Third({ navigation }) {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={()=>navigation.navigate('HomeScreen')}>
-                    <Text style={styles.buttonText}>Next</Text>
+                    <Text style={styles.buttonText}>Giriş</Text>
                 </TouchableOpacity>
             </View>
         </View>

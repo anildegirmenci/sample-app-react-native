@@ -20,7 +20,7 @@ export default function Second({ navigation }) {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={()=>navigation.navigate('Third')}>
-                    <Text style={styles.buttonText}>Next</Text>
+                    <Text style={styles.buttonText}>İleri</Text>
                 </TouchableOpacity>
             </View>
         </View>

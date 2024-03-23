@@ -29,12 +29,28 @@ const cards = [
         date: ['21.05.20'],
         likes: 1058
     },
+    {
+        id: 4,
+        image: require('../assets/factory.png'),
+        header: 'Emin ad minim',
+        buttonText: 'Duis aute',
+        date: ['21.05.20'],
+        likes: 1058
+    },
+    {
+        id: 5,
+        image: require('../assets/womanworker.png'),
+        header: 'Emin ad minim',
+        buttonText: 'Duis aute',
+        date: ['21.05.20'],
+        likes: 1058
+    },
 ]
 
 export default function Content() {
     const navigation = useNavigation();
     return (
-        <ScrollView>
+        <ScrollView style={styles.scrollContainer}>
             {cards.map((card) => (
                 <View key={card.id} style={styles.container}>
                     <View style={styles.imgContainer}>
@@ -43,9 +59,9 @@ export default function Content() {
                     <Text style={styles.heading}>{card.header}</Text>
                     <View style={styles.group}>
                         <View style={styles.buttonView}>
-                        <TouchableOpacity onPress={()=> navigation.navigate('NextScreen')}>
-                            <Text style={styles.buttonText}>{card.buttonText}</Text>
-                        </TouchableOpacity>
+                            <TouchableOpacity onPress={() => navigation.navigate('NextScreen')}>
+                                <Text style={styles.buttonText}>{card.buttonText}</Text>
+                            </TouchableOpacity>
                         </View>
                         <View style={styles.calendar}>
                             <Feather style={styles.groupText} name="calendar" size={24} color="black" />
@@ -65,8 +81,9 @@ export default function Content() {
 }
 
 const styles = StyleSheet.create({
-    container:{
-        display: 'flex', 
+    scrollContainer: { marginBottom: 110 },
+    container: {
+        display: 'flex',
         marginBottom: 30,
         backgroundColor: '#fff',
         shadowColor: '#000',
@@ -74,66 +91,66 @@ const styles = StyleSheet.create({
         shadowOpacity: .8,
         shadowRadius: 5,
         elevation: 3,
-        borderRadius:10,
-        paddingBottom:10,
-        paddingLeft:5,
-        paddingRight:5
+        borderRadius: 10,
+        paddingBottom: 10,
+        paddingLeft: 5,
+        paddingRight: 5
     },
-    mainImage:{
+    mainImage: {
         marginBottom: 10,
-        width:375,
-        borderTopLeftRadius:10,
-        borderTopRightRadius:10
+        width: 375,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10
     },
-    imgContainer:{
+    imgContainer: {
         alignItems: 'center'
     },
-    heading:{
-        fontSize:23,
-        color:'#048345',
-        marginBottom:10,
-        fontWeight:'400'
+    heading: {
+        fontSize: 23,
+        color: '#048345',
+        marginBottom: 10,
+        fontWeight: '400'
     },
-    buttonView:{
+    buttonView: {
         justifyContent: 'center',
-        alignItems:'center',
-        width:120,
-        borderRadius:20,
-        borderWidth:1,
-        borderColor:'#B9CBC0'
+        alignItems: 'center',
+        width: 120,
+        borderRadius: 20,
+        borderWidth: 1,
+        borderColor: '#B9CBC0'
     },
-    buttonText:{
-        color:'#048345'
-    },   
-    group:{
-        display: 'flex', 
-        flexDirection: 'row', 
+    buttonText: {
+        color: '#048345'
+    },
+    group: {
+        display: 'flex',
+        flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center', 
-        marginLeft: 10, 
+        alignItems: 'center',
+        marginLeft: 10,
         marginRight: 10
     },
-    calendar:{
-        flex: 1, 
-        flexDirection: 'row',
-        justifyContent: 'center', 
-        alignItems:'center'
-    },
-    groupText:{
-        fontSize:15,
-        fontWeight:'400',
-        color:'#999EB9',
-        marginLeft: 1,
-    },
-    heartContainer:{
-        flex: 1, 
+    calendar: {
+        flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
-        alignItems:'center'
+        alignItems: 'center'
     },
-    heart:{
-        color:'#FF6767',
-        marginRight:2,
+    groupText: {
+        fontSize: 15,
+        fontWeight: '400',
+        color: '#999EB9',
+        marginLeft: 1,
+    },
+    heartContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    heart: {
+        color: '#FF6767',
+        marginRight: 2,
 
     }
 })
